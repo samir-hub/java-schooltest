@@ -41,7 +41,8 @@ public class CourseServiceImplTest
     @Test
     public void findCourseById()
     {
-        courseService.findCourseById(2);
+//        courseService.findCourseById(2);
+        assertEquals("Data Science", courseService.findCourseById(1).getCoursename());
     }
 
     @Test
@@ -53,11 +54,6 @@ public class CourseServiceImplTest
         courseService.save(c1);
         assertEquals(7, courseService.findAll().size());
 
-    }
-
-    @Test
-    public void getCountStudentsInCourse()
-    {
     }
 
     @Test

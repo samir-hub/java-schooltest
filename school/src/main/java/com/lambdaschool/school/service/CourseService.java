@@ -10,7 +10,7 @@ public interface CourseService
 {
     ArrayList<Course> findAll();
 
-    Optional<Course> findCourseById(long id);
+    Course findCourseById(long id);
 
     ArrayList<CountStudentsInCourses> getCountStudentsInCourse();
 
